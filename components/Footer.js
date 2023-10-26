@@ -1,12 +1,7 @@
 import Component from "./Component.js"
 
-class Footer extends Component
+export default class Footer extends Component
 {
-    constructor()
-    {
-        super()
-    }
-
     async connectedCallback()
     {
         this.innerHTML = await this.view('footer')
@@ -16,9 +11,4 @@ class Footer extends Component
     {
         console.log('Dismounted', this)
     }
-}
-
-if ('customElements' in window)
-{
-    customElements.define('main-footer', Footer)
 }
