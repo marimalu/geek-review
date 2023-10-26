@@ -1,6 +1,6 @@
 import Component from "./Component.js"
 
-class Header extends Component
+class Footer extends Component
 {
     constructor()
     {
@@ -9,7 +9,7 @@ class Header extends Component
 
     async connectedCallback()
     {
-        this.innerHTML = await this.view('header')
+        this.innerHTML = await this.view('footer')
     }
 
     disconnectedCallback()
@@ -20,5 +20,5 @@ class Header extends Component
 
 if ('customElements' in window)
 {
-    customElements.define('main-header', Header)
+    customElements.define('main-footer', Footer)
 }
