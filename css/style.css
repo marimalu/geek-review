@@ -33,8 +33,11 @@ RESPONSIVE
 
 body {
   font-family: 'Muli', sans-serif;
+  /* background: rgb(61,44,88);
+  background: linear-gradient(180deg, rgba(61,44,88,1) 36%, rgba(41,25,53,1) 100%); */
+  background-color: #EEF0F2;
   font-size: 16px;
-  color: #505050;
+  color: #1f1f1f;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -319,7 +322,7 @@ textarea.input {
 }
 
 #nav-bottom {
-  border-top: 1px solid #e8eaed;
+  border-top: 1px solid #22132a;
 }
 
 /*----------------------------*\
@@ -672,6 +675,20 @@ textarea.input {
 /*=========================================================
 	PAGE HEADER
 ===========================================================*/
+
+#header {
+  background-color: #562767;
+  /* background-color: #9c1351; */
+  color: #EEC643;
+}
+
+#nav-top a {
+  color: #EEC643;
+}
+
+#nav-bottom a {
+  color: #EEC643;
+}
 
 .page-header {
   position: relative;
