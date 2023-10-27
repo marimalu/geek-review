@@ -1566,3 +1566,18 @@ textarea.input {
     margin-left: 0px;
   }
 }
+
+#cards {
+  /* background-color: #00adf2; */
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 45px;
+}
+
+#cards {
+  
+}
+
+#cards img {
+  border-radius: 50px;
+}
