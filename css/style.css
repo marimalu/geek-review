@@ -309,7 +309,7 @@ textarea.input {
 ===========================================================*/
 
 #nav {
-  border-bottom: 1px solid #e8eaed;
+  
 }
 
 #nav:after {
@@ -377,8 +377,8 @@ textarea.input {
 
 .nav-logo .logo {
   display: inline-block;
+  width: 100px;
   line-height: 70px;
-  height: 70px;
 }
 
 .nav-logo .logo>img {
