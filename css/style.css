@@ -32,7 +32,7 @@ RESPONSIVE
 \*----------------------------*/
 
 :root {
-  --purple: #562767;
+  --purple: #4D2DB7;
   --yellow: #EEC643;
 }
 
@@ -696,7 +696,7 @@ textarea.input {
 ===========================================================*/
 
 #header {
-  background-color: #562767;
+  background-color: var(--purple);
   /* background-color: #9c1351; */
   color: #EEC643;
 }
