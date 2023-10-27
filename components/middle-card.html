@@ -3,10 +3,10 @@
         <a class="post-img" href="{% post.link %}"><img src="{% post.image %}" alt=""></a>
         <div class="post-body">
             <div class="post-category">
-                <a href="{% category.link %}">{% category.title %}</a>
+                <a href="{% category.link %}" class="text-purple">{% category.title %}</a>
             </div>
             <h3 class="post-title">
-                <a href="{% post.link %}">{% post.description %}</a>
+                <a href="{% post.link %}" class="text-purple">{% post.description %}</a>
             </h3>
             <ul class="post-meta">
                 <li><a href="{% author.link %}">{% author.name %}</a></li>

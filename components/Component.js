@@ -3,8 +3,6 @@ export default class Component extends HTMLElement
     constructor()
     {
         super()
-
-        this.varRegex = /{%%\s*(.*?)\s*%%}/
     }
 
     async view(view)
@@ -15,11 +13,6 @@ export default class Component extends HTMLElement
         } catch (error) {
             console.error('Ocorreu um erro: ', error)
         }
-    }
-
-    getCustomAttributes(view)
-    {
-        return view.match(this.varRegex);
     }
 
     replaceTemplate(view, list)
