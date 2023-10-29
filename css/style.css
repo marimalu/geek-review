@@ -194,6 +194,11 @@ figure>figcaption {
   margin-bottom: 30px;
 }
 
+.section-row p {
+  text-align: justify;
+  font-size: 13pt;
+}
+
 .section-title {
   position: relative;
   margin-bottom: 20px;
