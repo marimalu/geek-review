@@ -1332,9 +1332,13 @@ textarea.input {
 
 .category-widget ul li a span {
   float: right;
-  font-size: 14px;
+  font-size: 13px;
   color: #97989b;
   margin-left: 15px;
+}
+
+.category-widget ul li a {
+  font-size: 13px;
 }
 
 .footer-widget .category-widget ul li {
