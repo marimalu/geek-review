@@ -9,13 +9,14 @@ class Evaluation extends Model
         private $conteudo_personalizado,
         private $usabilidade,
         private $organizacao_elementos,
-        private $cores
+        private $cores,
+        private $comentario
     ) {}
 
     public function save()
     {
         $statement = self::$connection->prepare(
-            "INSERT INTO evaluations (objetivo, conteudo_personalizado, usabilidade, organizacao_elementos, cores) VALUES (:objetivo, :conteudo_personalizado, :usabilidade, :organizacao_elementos, :cores);");
+            "INSERT INTO evaluations (objetivo, conteudo_personalizado, usabilidade, organizacao_elementos, cores, comentario) VALUES (:objetivo, :conteudo_personalizado, :usabilidade, :organizacao_elementos, :cores, :comentario);");
 
         $statement->bindValue(
             ':objetivo', $this->objetivo, SQLITE3_TEXT
@@ -35,6 +36,10 @@ class Evaluation extends Model
 
         $statement->bindValue(
             ':cores', $this->cores, SQLITE3_TEXT
+        );
+
+        $statement->bindValue(
+            ':comentario', $this->comentario, SQLITE3_TEXT
         );
         
         return $statement->execute();

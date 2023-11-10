@@ -77,54 +77,45 @@
 					<div class="section-row">
 						<p>Avalie o Geek Review de acordo com sua experiência no site conforme os critérios a seguir:</p>
 						<form method="POST" action="/backend/save.php">
-							<label for="objetivo">O objetivo principal do Geek Review (a visualização de reviews geeks) foi identificado de forma clara quando acessei o site.</label>
-							<br>
-							
-							<input id="objetivo1" type="radio" name="objetivo" value="0"> <label style="font-weight: normal;" for="objetivo1">Concordo Totalmente</label>
-							<input id="objetivo2" type="radio" name="objetivo" value="1"> <label style="font-weight: normal;" for="objetivo2">Concordo Parcialmente</label>
-							<input id="objetivo3" type="radio" name="objetivo" value="2"> <label style="font-weight: normal;" for="objetivo3">Discordo Parcialmente</label>
-							<input id="objetivo4" type="radio" name="objetivo" value="3"> <label style="font-weight: normal;" for="objetivo4">Discordo Totalmente</label>
-							<br>
-
-							<label for="conteudo_personalizado">Os conteúdos disponibilizados no Geek Review são condizentes com a proposta do site.</label>
-							<br>
-							
-							<input id="conteudo_personalizado1" type="radio" name="conteudo_personalizado" value="0"> <label style="font-weight: normal;" for="conteudo_personalizado1">Concordo Totalmente</label>
-							<input id="conteudo_personalizado2" type="radio" name="conteudo_personalizado" value="1"> <label style="font-weight: normal;" for="conteudo_personalizado2">Concordo Parcialmente</label>
-							<input id="conteudo_personalizado3" type="radio" name="conteudo_personalizado" value="2"> <label style="font-weight: normal;" for="conteudo_personalizado3">Discordo Parcialmente</label>
-							<input id="conteudo_personalizado4" type="radio" name="conteudo_personalizado" value="3"> <label style="font-weight: normal;" for="conteudo_personalizado4">Discordo Totalmente</label>
-							<br>
-
-							<label for="usabilidade">O Geek Review é um site simples de usar, sem precisar de muitos rodeios para acessar os conteúdos disponíveis.</label>
-							<br>
-							
-							<input id="usabilidade1" type="radio" name="usabilidade" value="0"> <label style="font-weight: normal;" for="usabilidade1">Concordo Totalmente</label>
-							<input id="usabilidade2" type="radio" name="usabilidade" value="1"> <label style="font-weight: normal;" for="usabilidade2">Concordo Parcialmente</label>
-							<input id="usabilidade3" type="radio" name="usabilidade" value="2"> <label style="font-weight: normal;" for="usabilidade3">Discordo Parcialmente</label>
-							<input id="usabilidade4" type="radio" name="usabilidade" value="3"><label style="font-weight: normal;" for="usabilidade4">Discordo Totalmente</label>
-							<br>
-
-							<label for="organizacao_elementos">O Geek Review possui uma organização satisfatória de elementos nas páginas e seus conteúdos por categoria são devidamente distribuídos.</label>
-							<br>
-							
-							<input id="elementos1" type="radio" name="organizacao_elementos" value="0"> <label style="font-weight: normal;" for="elementos1">Concordo Totalmente</label>
-							<input id="elementos2" type="radio" name="organizacao_elementos" value="1"> <label style="font-weight: normal;" for="elementos2">Concordo Parcialmente</label>
-							<input id="elementos3" type="radio" name="organizacao_elementos" value="2"> <label style="font-weight: normal;" for="elementos3">Discordo Parcialmente</label>
-							<input id="elementos4" type="radio" name="organizacao_elementos" value="3"> <label style="font-weight: normal;" for="elementos4">Discordo Totalmente</label>
-							<br>
-
-							<label for="cores">A escolha de cores que compõem o Geek Review são harmônicas e não causam desconforto na navegação do site.</label>
-							<br>
-							
-							<input id="cores1" type="radio" name="cores" value="0"> <label style="font-weight: normal;" for="cores1">Concordo Totalmente</label>
-							<input id="cores2" type="radio" name="cores" value="1"> <label style="font-weight: normal;" for="cores2">Concordo Parcialmente</label>
-							<input id="cores3" type="radio" name="cores" value="2"> <label style="font-weight: normal;" for="cores3">Discordo Parcialmente</label>
-							<input id="cores4" type="radio" name="cores" value="3"> <label style="font-weight: normal;" for="cores4">Discordo Totalmente</label>
-							<br>
-
-							<label>Sua opinião é valiosa para o Geek Review. Deixe uma sugestão, feedback ou crítica no campo abaixo caso deseje:</label>
-							<textarea class="input" name="" id="" placeholder="Deixe seu comentário"></textarea>
-
+							<div style="margin-bottom: 2rem;">
+								<label for="objetivo" style="display: block;">O objetivo principal do Geek Review (a visualização de reviews geeks) foi identificado de forma clara ao acessar o site.</label>
+								<input id="objetivo1" type="radio" name="objetivo" value="0"> <label style="font-weight: normal;" for="objetivo1">Concordo Totalmente</label>
+								<input id="objetivo2" type="radio" name="objetivo" value="1"> <label style="font-weight: normal;" for="objetivo2">Concordo Parcialmente</label>
+								<input id="objetivo3" type="radio" name="objetivo" value="2"> <label style="font-weight: normal;" for="objetivo3">Discordo Parcialmente</label>
+								<input id="objetivo4" type="radio" name="objetivo" value="3"> <label style="font-weight: normal;" for="objetivo4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="conteudo_personalizado" style="display: block;">Os conteúdos disponibilizados no Geek Review são condizentes com a proposta do site.</label>
+								<input id="conteudo_personalizado1" type="radio" name="conteudo_personalizado" value="0"> <label style="font-weight: normal;" for="conteudo_personalizado1">Concordo Totalmente</label>
+								<input id="conteudo_personalizado2" type="radio" name="conteudo_personalizado" value="1"> <label style="font-weight: normal;" for="conteudo_personalizado2">Concordo Parcialmente</label>
+								<input id="conteudo_personalizado3" type="radio" name="conteudo_personalizado" value="2"> <label style="font-weight: normal;" for="conteudo_personalizado3">Discordo Parcialmente</label>
+								<input id="conteudo_personalizado4" type="radio" name="conteudo_personalizado" value="3"> <label style="font-weight: normal;" for="conteudo_personalizado4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="usabilidade" style="display: block;">O Geek Review é um site simples e direto de usar.</label>
+								<input id="usabilidade1" type="radio" name="usabilidade" value="0"> <label style="font-weight: normal;" for="usabilidade1">Concordo Totalmente</label>
+								<input id="usabilidade2" type="radio" name="usabilidade" value="1"> <label style="font-weight: normal;" for="usabilidade2">Concordo Parcialmente</label>
+								<input id="usabilidade3" type="radio" name="usabilidade" value="2"> <label style="font-weight: normal;" for="usabilidade3">Discordo Parcialmente</label>
+								<input id="usabilidade4" type="radio" name="usabilidade" value="3"><label style="font-weight: normal;" for="usabilidade4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="organizacao_elementos" style="display: block;">O Geek Review possui uma organização satisfatória de elementos nas páginas e seus conteúdos por categoria são devidamente distribuídos.</label>
+								<input id="elementos1" type="radio" name="organizacao_elementos" value="0"> <label style="font-weight: normal;" for="elementos1">Concordo Totalmente</label>
+								<input id="elementos2" type="radio" name="organizacao_elementos" value="1"> <label style="font-weight: normal;" for="elementos2">Concordo Parcialmente</label>
+								<input id="elementos3" type="radio" name="organizacao_elementos" value="2"> <label style="font-weight: normal;" for="elementos3">Discordo Parcialmente</label>
+								<input id="elementos4" type="radio" name="organizacao_elementos" value="3"> <label style="font-weight: normal;" for="elementos4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="cores" style="display: block;">A escolha de cores que compõem o Geek Review são harmônicas e não causam desconforto na navegação do site.</label>
+								<input id="cores1" type="radio" name="cores" value="0"> <label style="font-weight: normal;" for="cores1">Concordo Totalmente</label>
+								<input id="cores2" type="radio" name="cores" value="1"> <label style="font-weight: normal;" for="cores2">Concordo Parcialmente</label>
+								<input id="cores3" type="radio" name="cores" value="2"> <label style="font-weight: normal;" for="cores3">Discordo Parcialmente</label>
+								<input id="cores4" type="radio" name="cores" value="3"> <label style="font-weight: normal;" for="cores4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="comentario">Deixe uma sugestão, feedback ou crítica:</label>
+								<textarea class="input" name="comentario" id="comentario" placeholder="Deixe seu comentário" class="form-control"></textarea>
+							</div>
 							<button class="primary-button">Avaliar</button>
 						</form>
 					</div>
