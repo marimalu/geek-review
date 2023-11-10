@@ -1,7 +1,5 @@
 <?php
 
-// echo 'teste';exit;
-
 include __DIR__ . '/Evaluation.php';
 
 Model::createConnection(new SQLite3(__DIR__ . '/database.sqlite'));
