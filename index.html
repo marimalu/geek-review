@@ -189,26 +189,74 @@
 							</div>
 						</div>
 
-						<middle-card
-						data-post='{"type": "post", "description": "A luta dos mais fortes: Roteiro ou Lógica?", "link": "./blog-satoru-vs-sukuna.html", "image": "./img/gojo-vs-sukuna.jpg", "date": "31 Outubro 2023"}'
-						data-author='{"type": "author","name": "Bazilisco777", "link": "./about.html"}'
-						data-category='{"type": "category","title": "Animes & Mangás", "link": "./category-animes&mangas.html"}'
-						></middle-card>
-						<middle-card
-							data-post='{"type": "post", "description": "The Hobbit: As melhores cenas da franquia.", "link": "./blog-thehobbit.html", "image": "./img/thehobbit_landscape.jpg", "date": "27 Outubro 2023"}'
-							data-author='{"type": "author","name": "Felipe Erik", "link": "./about.html"}'
-							data-category='{"type": "category","title": "Filmes & Séries", "link": "./category-movies&series.html"}'
-						></middle-card>
-						<middle-card
-							data-post='{"type": "post", "description": "Spirit: O corcel indomável.", "link": "./blog-spirit.html", "image": "./img/spirit_landscape1.png", "date": "03 Novembro 2023"}'
-							data-author='{"type": "author","name": "Felipe Erik", "link": "./about.html"}'
-							data-category='{"type": "category","title": "Filmes & Séries", "link": "./category-movies&series.html"}'
-						></middle-card>
-						<middle-card
-						data-post='{"type": "post", "description": "Hypnosis Mic Rhyme Anima T2E4: Há pouco sucesso onde há pouco riso", "link": "./blog-hypnosismic.html", "image": "./img/hypmic001.jpg", "date": "27 Outubro 2023"}'
-						data-author='{"type": "author","name": "Maria Luíza", "link": "./about.html"}'
-						data-category='{"type": "category","title": "Animes & Mangás", "link": "./category-animes&mangas.html"}'
-						></middle-card>
+						<div class="col-md-6">
+							<div class="post">
+								<a class="post-img" href="./blog-satoru-vs-sukuna.html"><img src="./img/gojo-vs-sukuna.jpg" alt=""></a>
+								<div class="post-body">
+									<div class="post-category">
+										<a href="./category-animes&mangas.html" class="text-purple">Animes & Mangás</a>
+									</div>
+									<h3 class="post-title">
+										<a href="./blog-satoru-vs-sukuna.html" class="text-purple">A luta dos mais fortes: Roteiro ou Lógica?</a>
+									</h3>
+									<ul class="post-meta">
+										<li><a href="./about.html">Bazilisco777</a></li>
+										<li>31 Outubro 2023</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="post">
+								<a class="post-img" href="./blog-thehobbit.html"><img src="./img/thehobbit_landscape.jpg" alt=""></a>
+								<div class="post-body">
+									<div class="post-category">
+										<a href="./category-movies&series.html" class="text-purple">Filmes & Séries</a>
+									</div>
+									<h3 class="post-title">
+										<a href="./blog-thehobbit.html" class="text-purple">The Hobbit: As melhores cenas da franquia.</a>
+									</h3>
+									<ul class="post-meta">
+										<li><a href="./about.html">Felipe Erik</a></li>
+										<li>27 Outubro 2023</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="post">
+								<a class="post-img" href="./blog-spirit.html"><img src="./img/spirit_landscape1.png" alt=""></a>
+								<div class="post-body">
+									<div class="post-category">
+										<a href="./category-movies&series.html" class="text-purple">Filmes & Séries</a>
+									</div>
+									<h3 class="post-title">
+										<a href="./blog-spirit.html" class="text-purple">Spirit: O corcel indomável.</a>
+									</h3>
+									<ul class="post-meta">
+										<li><a href="./about.html">Felipe Erik</a></li>
+										<li>03 Novembro 2023</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="post">
+								<a class="post-img" href="./blog-hypnosismic.html"><img src="./img/hypmic001.jpg" alt=""></a>
+								<div class="post-body">
+									<div class="post-category">
+										<a href="./category-animes&mangas.html" class="text-purple">Animes & Mangás</a>
+									</div>
+									<h3 class="post-title">
+										<a href="./blog-hypnosismic.html" class="text-purple">Hypnosis Mic Rhyme Anima T2E4: Há pouco sucesso onde há pouco riso</a>
+									</h3>
+									<ul class="post-meta">
+										<li><a href="./about.html">Maria Luíza</a></li>
+										<li>27 Outubro 2023</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<div class="clearfix visible-md visible-lg"></div>
 
 					</div>
@@ -456,14 +504,24 @@
 						<div class="section-title">
 							<h2 class="title">Reviews populares</h2>
 						</div>
-						<popular-review
-							data-post='{"type": "post", "description": "Boa noite Punpun: Crescer é aterrorizante", "link": "./blog-boanoitepunpun.html", "image": "./img/boanoitecover.jpg"}'
-							data-category='{"type": "category", "title": "Animes & Mangás", "link": "./category-animes&mangas.html"}'
-						></popular-review>
-						<popular-review
-							data-post='{"type": "post", "description": "Doll Bones: A morte pode brincar com você..", "link": "./blog-dollbones.html", "image": "./img/DollBones.jpg"}'
-							data-category='{"type": "category", "title": "Livros & HQS", "link": "./category-books&hqs.html"}'
-						></popular-review>
+						<div class="post post-widget">
+							<a class="post-img" href="{% post.link %}"><img src="./img/boanoitecover.jpg" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="./category-animes&mangas.html">Animes & Mangás</a>
+								</div>
+								<h3 class="post-title"><a href="./blog-boanoitepunpun.html">Boa noite Punpun: Crescer é aterrorizante</a></h3>
+							</div>
+						</div>
+						<div class="post post-widget">
+							<a class="post-img" href="{% post.link %}"><img src="./img/DollBones.jpg" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="./category-books&hqs.html">Livros & HQS</a>
+								</div>
+								<h3 class="post-title"><a href="./blog-dollbones.html">Doll Bones: A morte pode brincar com você..</a></h3>
+							</div>
+						</div>
 					</div>
 					<!-- /post widget -->
 				</div>
